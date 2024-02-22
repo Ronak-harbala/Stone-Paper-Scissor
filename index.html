@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <h2 class = "hide" id="faltu">Ankita pagal h !<br>Aur kitna khelegi</h2>
+    <main>
+        <div class="choices">
+           <button class="choice" id="rock"><img src="rock.jpg" alt="" class="image"></button>
+           <button class="choice" id="paper"><img src="paper.jpg" alt="" class="image"></button>
+           <button class="choice" id="scissor"><img src="scissor.jpg" alt="" class="image"></button>
+        </div>
+
+        <div class="score-board">
+            <div class="score">
+                <p id="user-score">0</p>
+                <p>You</p>
+            </div>
+
+            <div class="score">
+                <p id="comp-score">0</p>
+                <p>Comp</p>
+            </div>
+        </div>
+
+        <div class="moves">
+            <p id="user-choice" class = "show-moves"></p>
+            <p id="comp-choice" class = "show-moves"></p>  
+        </div>
+
+        <div class="msg-container">
+            <p id = "msg">play your move</p>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
