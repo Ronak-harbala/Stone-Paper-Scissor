@@ -3,9 +3,6 @@
  let userScoreElem = document.querySelector("#user-score");
  let compScoreElem = document.querySelector("#comp-score");
  let compChoice = null;
- let pagal = document.querySelector("#faltu");
- let faltu = 0;
- let count = 0;
  let msg = document.querySelector("#msg");
  let userChoiceElem = document.querySelector("#user-choice");
  let compChoiceElem = document.querySelector("#comp-choice");
@@ -39,13 +36,6 @@
  
  choices.forEach((choice)=>{
     choice.addEventListener("click",()=>{
-        if(count >= 10){
-        pagal.classList.remove("hide");
-        faltu++;
-        }
-        
-        count++;
-        pagal.style = `color : yellow ; position : absolute ; font-weight : bold ;font-size : ${faltu}rem; top : 0;left : 20%; `;
 
         let userChoice = choice.getAttribute("id");
         compChoice = getCompChoice();
